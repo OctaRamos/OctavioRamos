@@ -1,0 +1,60 @@
+@use "../utilities/mixins" as *;
+
+@media screen and (min-width: 1024px) {
+
+    .indexMain {
+        .indexMainContainer {
+            @include grid (repeat(4, 1fr), auto);
+            gap: 1rem;
+        }
+    }
+
+    .indexSecction {
+        @include grid (repeat(4, 1fr), auto);
+        gap: 1rem;
+    }
+
+    .tiendaMain {
+        width: 100%;
+
+        .cardsTienda {
+            @include grid (repeat(3, 1fr), auto);
+            width: 100%;
+            gap: 1rem;
+
+            .cardTiendaBloque {
+                gap: 0.5rem;
+                background-color: rgb(208 214 216 / 48%);
+                border-radius: 15px 0 15px 0;
+            }
+        }
+    }
+
+    .contactoMain {
+        @include grid (1fr, auto);
+        width: 100%;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .mainExcursiones {
+        .cardExcursionesBloque {
+            @include grid(repeat(4, 1fr), auto);
+            gap: 3rem;
+            padding: 2rem;
+            width: 100%;
+        }
+    }
+
+    .mainHospedajes {
+        .cardsHospedajesSecction {
+            @include grid(repeat(4, 1fr), auto);
+            gap: 3rem;
+            padding: 3rem;
+            width: 100%;
+        }
+    }
+}

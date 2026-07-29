@@ -1,0 +1,6 @@
+@use "../utilities/extends";
+
+.indexFooter{
+    height: 10rem;
+    @extend .d-flexBasico;
+}

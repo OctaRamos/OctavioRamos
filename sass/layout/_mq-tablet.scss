@@ -1,0 +1,51 @@
+// mixins de media query para tablet
+@use "../utilities/mixins" as *;
+
+/* estilos de tablet */
+@media screen and (min-width: 768px) {
+
+    .indexMain {
+        text-align: center;
+
+        .indexMainContainer {
+            @include grid (repeat(2, 1fr), auto);
+        }
+
+    }
+
+    .indexSecction {
+        @include grid (repeat(2, 1fr), auto);
+    }
+
+    .tiendaMain {
+        width: 100%;
+
+        .cardsTienda {
+            @include grid (repeat(2, 1fr), auto);
+            width: 100%;
+            gap: 1rem;
+
+            .cardTiendaBloque {
+                gap: 0.5rem;
+                background-color: rgb(208 214 216 / 48%);
+                border-radius: 15px 0 15px 0;
+            }
+        }
+    }
+
+    .mainExcursiones {
+        .cardExcursionesBloque {
+            @include grid(repeat(2, 1fr), auto);
+            gap: 1rem;
+            width: 100%;
+        }
+    }
+
+    .mainHospedajes {
+        .cardsHospedajesSecction {
+            @include grid(repeat(2, 1fr), auto);
+            gap: 1rem;
+            width: 100%;
+        }
+    }
+}

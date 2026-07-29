@@ -1,0 +1,40 @@
+// con parametros y sin parametros
+
+@mixin grid ($column, $row) {
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+
+// sin parametros
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@mixin cardExcursiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 2rem;
+}
+
+@mixin propiedadesBoton {
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}

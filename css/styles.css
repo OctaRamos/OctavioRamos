@@ -1,10 +1,29 @@
-.backgroundHeaders, .indexHeader {
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.backgroundHeaders, .indexHeader, .tiendaHeader, .contactoHeader, .excursionesHeader, .hospedajesHeader {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 95vh;
 }
 
-.d-flexBasico, .indexHeaderContainer {
+.backgroundExcursiones, .mainExcursiones .cardExcursionesBloque .cardExcursiones1, .mainExcursiones .cardExcursionesBloque .cardExcursiones2, .mainExcursiones .cardExcursionesBloque .cardExcursiones3, .mainExcursiones .cardExcursionesBloque .cardExcursiones4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+.d-flexBasico, .indexFooter, .indexHeaderContainer, .indexTiendaContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +31,7 @@
 }
 
 .indexHeader {
-  background-image: url("../../img/IndexHeaderBackground.jpeg");
+  background-image: url("../../img/indexHeaderBackground.jpg");
   position: relative;
 }
 
@@ -23,8 +42,433 @@
   background-color: rgba(0, 0, 0, 0.386);
 }
 
-* {
-  font-family: "Poppins", sans-serif !important;
+.tiendaHeader {
+  background-image: url("../../img/headertienda.JPG");
+  position: relative;
+}
+
+.contactoHeader {
+  background-image: url("../../img/indexContacto.JPG");
+  position: relative;
+}
+
+.excursionesHeader {
+  background-image: url("../../img/excursionesHeader.jpg");
+  position: relative;
+}
+
+.hospedajesHeader {
+  background-image: url("../../img/hospedajeHeader.jpg");
+  position: relative;
+}
+
+.indexMain {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.indexMain .indexMainCard {
+  background-color: rgba(208, 214, 216, 0.48);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.indexMain .indexMainCard h3 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.indexMain .indexMainCard ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.indexMain .indexMainCard ul li {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.tiendaMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 253, 253);
+}
+.tiendaMain .cardsTienda {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: stretch;
+  gap: 1rem;
+}
+.tiendaMain .cardsTienda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tiendaMain .cardsTienda .cardTiendaBloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgba(208, 214, 216, 0.48);
+  border-radius: 15px 0 15px 0;
+  padding: 1rem;
+}
+.tiendaMain .cardsTienda .cardTiendaBloque .precioBoton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tiendaMain .cardsTienda .cardTiendaBloque .precioBoton:hover {
+  transform: translateY(-2px);
+}
+
+.contactoMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 253, 253);
+  padding: 2rem;
+  margin: 3rem, auto;
+}
+.contactoMain h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contactoMain .contactoFormulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contactoMain .contactoFormulario .formGrupo {
+  display: flex;
+  flex-direction: column;
+}
+.contactoMain .contactoFormulario .formGrupo label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.contactoMain .contactoFormulario .formGrupo input,
+.contactoMain .contactoFormulario .formGrupo textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+.contactoMain .contactoFormulario .formGrupo input:focus,
+.contactoMain .contactoFormulario .formGrupo textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+.contactoMain .contactoFormulario .formGrupo textarea {
+  resize: vertical;
+}
+.contactoMain .contactoFormulario button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contactoMain .contactoFormulario button:hover {
+  transform: translateY(-2px);
+}
+
+.mainExcursiones {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 253, 253);
+}
+.mainExcursiones .cardExcursionesBloque {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.mainExcursiones .cardExcursionesBloque img {
+  width: 100%;
+  height: 100%;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones1 {
+  background-image: url("../../img/quebrada.JPG");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2rem;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones1 .infoBoton {
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones1 .infoBoton:hover {
+  transform: translateY(-2px);
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones2 {
+  background-image: url("../../img/salinas.JPG");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2rem;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones2 .infoBoton {
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones2 .infoBoton:hover {
+  transform: translateY(-2px);
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones3 {
+  background-image: url("../../img/hornocal.JPG");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2rem;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones3 .infoBoton {
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones3 .infoBoton:hover {
+  transform: translateY(-2px);
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones4 {
+  background-image: url("../../img/pucara.JPG");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2rem;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones4 .infoBoton {
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mainExcursiones .cardExcursionesBloque .cardExcursiones4 .infoBoton:hover {
+  transform: translateY(-2px);
+}
+
+.mainHospedajes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 253, 253);
+}
+.mainHospedajes .cardsHospedajesSecction {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: stretch;
+  gap: 1rem;
+  padding: 1rem;
+}
+.mainHospedajes .cardsHospedajesSecction img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainHospedajes .cardsHospedajesSecction .cardHospedajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgba(208, 214, 216, 0.48);
+  border-radius: 15px 0 15px 0;
+  padding: 1rem;
+}
+.mainHospedajes .cardsHospedajesSecction .cardHospedajes .infoBoton {
+  margin-top: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mainHospedajes .cardsHospedajesSecction .cardHospedajes .infoBoton:hover {
+  transform: translateY(-2px);
+}
+
+.contenedorSectionIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: rgba(208, 214, 216, 0.482);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid rgba(24, 24, 24, 0.482);
+}
+.contenedorSectionIndex h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.contenedorSectionIndex p {
+  text-align: center;
+}
+
+.indexFooter {
+  height: 10rem;
+}
+
+/* estilos de tablet */
+@media screen and (min-width: 768px) {
+  .indexMain {
+    text-align: center;
+  }
+  .indexMain .indexMainContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .indexSecction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .tiendaMain {
+    width: 100%;
+  }
+  .tiendaMain .cardsTienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 1rem;
+  }
+  .tiendaMain .cardsTienda .cardTiendaBloque {
+    gap: 0.5rem;
+    background-color: rgba(208, 214, 216, 0.48);
+    border-radius: 15px 0 15px 0;
+  }
+  .mainExcursiones .cardExcursionesBloque {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    width: 100%;
+  }
+  .mainHospedajes .cardsHospedajesSecction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .indexMain .indexMainContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .indexSecction {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .tiendaMain {
+    width: 100%;
+  }
+  .tiendaMain .cardsTienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 1rem;
+  }
+  .tiendaMain .cardsTienda .cardTiendaBloque {
+    gap: 0.5rem;
+    background-color: rgba(208, 214, 216, 0.48);
+    border-radius: 15px 0 15px 0;
+  }
+  .contactoMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .mainExcursiones .cardExcursionesBloque {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+    padding: 2rem;
+    width: 100%;
+  }
+  .mainHospedajes .cardsHospedajesSecction {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+    padding: 3rem;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
