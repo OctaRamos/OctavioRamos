@@ -3,7 +3,7 @@
 @use "../utilities/mixins" as *;
 
 .indexHeader {
-    background-image: url("../../img/indexHeaderBackground.jpg");
+    background-image: url("../img/indexHeaderBackground.jpg");
     position: relative;
     @extend .backgroundHeaders;
 }
