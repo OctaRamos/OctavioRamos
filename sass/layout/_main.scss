@@ -156,7 +156,7 @@
         }
 
         .cardExcursiones1 {
-            background-image: url("../../img/quebrada.JPG");
+            background-image: url("../img/quebrada.JPG");
             @extend .backgroundExcursiones;
             @include cardExcursiones;
 
@@ -166,7 +166,7 @@
         }
 
         .cardExcursiones2 {
-            background-image: url("../../img/salinas.JPG");
+            background-image: url("../img/salinas.JPG");
             @extend .backgroundExcursiones;
             @include cardExcursiones;
 
@@ -176,7 +176,7 @@
         }
 
         .cardExcursiones3 {
-            background-image: url("../../img/hornocal.JPG");
+            background-image: url("../img/hornocal.JPG");
             @extend .backgroundExcursiones;
             @include cardExcursiones;
 
@@ -186,7 +186,7 @@
         }
 
         .cardExcursiones4 {
-            background-image: url("../../img/pucara.JPG");
+            background-image: url("../img/pucara.JPG");
             @extend .backgroundExcursiones;
             @include cardExcursiones;
 

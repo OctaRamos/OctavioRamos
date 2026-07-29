@@ -20,7 +20,7 @@
 }
 
 .tiendaHeader {
-    background-image: url("../../img/headertienda.JPG");
+    background-image: url("../img/headertienda.JPG");
     position: relative;
     @extend .backgroundHeaders;
 }
@@ -30,19 +30,19 @@
 }
 
 .contactoHeader{
-    background-image: url("../../img/indexContacto.JPG");
+    background-image: url("../img/indexContacto.JPG");
     position: relative;
     @extend .backgroundHeaders;
 }
 
 .excursionesHeader{
-    background-image: url("../../img/excursionesHeader.jpg");
+    background-image: url("../img/excursionesHeader.jpg");
     position: relative;
     @extend .backgroundHeaders;
 }
 
 .hospedajesHeader{
-    background-image: url("../../img/hospedajeHeader.jpg");
+    background-image: url("../img/hospedajeHeader.jpg");
     position: relative;
     @extend .backgroundHeaders;
 }
