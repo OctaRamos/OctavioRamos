@@ -43,22 +43,22 @@
 }
 
 .tiendaHeader {
-  background-image: url("../../img/headertienda.JPG");
+  background-image: url("../img/headertienda.JPG");
   position: relative;
 }
 
 .contactoHeader {
-  background-image: url("../../img/indexContacto.JPG");
+  background-image: url("../img/indexContacto.JPG");
   position: relative;
 }
 
 .excursionesHeader {
-  background-image: url("../../img/excursionesHeader.jpg");
+  background-image: url("../img/excursionesHeader.jpg");
   position: relative;
 }
 
 .hospedajesHeader {
-  background-image: url("../../img/hospedajeHeader.jpg");
+  background-image: url("../img/hospedajeHeader.jpg");
   position: relative;
 }
 
@@ -214,7 +214,7 @@
   height: 100%;
 }
 .mainExcursiones .cardExcursionesBloque .cardExcursiones1 {
-  background-image: url("../../img/quebrada.JPG");
+  background-image: url("../img/quebrada.JPG");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,7 +236,7 @@
   transform: translateY(-2px);
 }
 .mainExcursiones .cardExcursionesBloque .cardExcursiones2 {
-  background-image: url("../../img/salinas.JPG");
+  background-image: url("../img/salinas.JPG");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,7 +258,7 @@
   transform: translateY(-2px);
 }
 .mainExcursiones .cardExcursionesBloque .cardExcursiones3 {
-  background-image: url("../../img/hornocal.JPG");
+  background-image: url("../img/hornocal.JPG");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,7 +280,7 @@
   transform: translateY(-2px);
 }
 .mainExcursiones .cardExcursionesBloque .cardExcursiones4 {
-  background-image: url("../../img/pucara.JPG");
+  background-image: url("../img/pucara.JPG");
   display: flex;
   flex-direction: column;
   align-items: center;
