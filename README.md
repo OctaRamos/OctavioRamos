@@ -36,3 +36,7 @@ index.html
 ## Autor
 Octavio Ramos.
 Proyecto realizado como entrega final del curso de Desarrollo Web.
+
+# Sitio web
+GitHub Pages:
+https://octaramos.github.io/OctavioRamos/
